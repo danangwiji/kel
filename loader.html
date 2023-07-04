@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nft's</title>
+  <style>
+    body {
+      animation: bodyFrame 3s;
+    }
+
+    @keyframes bodyFrame {
+      0% {
+      }
+      
+      100% {
+      }
+    }
+
+    .logo {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      opacity: 0;
+      animation: float-in 1s ease-in forwards, fly-out 1s ease-in-out forwards 2s;
+      filter: invert(1);
+    }
+
+    @keyframes float-in {
+      0% {
+        top: 60%;
+        opacity: 0;
+      }
+      100% {
+        top: 50%;
+        opacity: 1;
+      }
+    }
+
+    @keyframes fly-out {
+      0% {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        height: 100px;
+        opacity: 1;
+      }
+      100% {
+        top: 25px;
+        left: 25px;
+        transform: translate(0, 0);
+        width: 50px;
+        height: 50px;
+        opacity: 0.7;
+        filter: invert(0.7);
+      }
+    }
+  </style>
+</head>
+<body>
+<div>
+  <img class="logo" src="assets/logo.png" alt="Full logo image">
+</div>
+<script>
+  setTimeout(function() {
+    window.location.href = "index.html";
+  }, 3000); // Replace 5000 with the desired duration of the loader animation (in milliseconds)
+</script>
+</body>
+</html>

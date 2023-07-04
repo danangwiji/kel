@@ -1,0 +1,212 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-image: url(assets/bg.png);
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  top: 20px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 60px;
+  background-color: transparent;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  z-index: 1;
+}
+
+.navbar-brand img {
+  filter: invert(0);
+  width: 50px;
+  height: 50px;
+}
+
+.navbar-nav {
+  display: flex;
+}
+
+.nav-item {
+  margin: 10px;
+}
+
+.content-section {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 0;
+}
+
+h1,
+h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+
+
+#portfolio {
+  padding: 20px;
+  text-align: center;
+}
+
+#portfolio h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#portfolio .card {
+  background-color: transparent;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 10px;
+  width: calc(33.33% - 40px);
+  vertical-align: top;
+  padding: 20px;
+}
+
+#portfolio .card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#portfolio .card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#portfolio .card p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.card-container {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  flex: 1;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.contact {
+  padding: 20px;
+  text-align: center;
+}
+
+.contact-logos {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-logos a {
+  display: flex;
+  margin: 20px;
+}
+
+.contact-logos img {
+  width: 80px;
+  height: auto;
+}
+
+.footer {
+  bottom: 20px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 60px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  color: red;
+}
+
+.footer-brand img {
+  filter: invert(0);
+  width: 50px;
+  height: 50px;
+}
+
+/* @keyframes bodyFrame {
+  0% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.logo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  opacity: 0;
+  animation: float-in 1s ease-in forwards, fly-out 1s ease-in-out forwards 2s;
+  filter: invert(1);
+}
+
+@keyframes float-in {
+  0% {
+    top: 60%;
+    opacity: 0;
+  }
+  100% {
+    top: 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes fly-out {
+  0% {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    left: 25px;
+    transform: translate(0, 0);
+    width: 50px;
+    height: 50px;
+    opacity: 1;
+  }
+} */
